@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS</title>
+    <!-- link with bootstrap Online -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- bootstarp icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link with style css -->
+     <link rel="stylesheet" href="css/style.css">
+     
+<script>
+    function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+  </script>
+
+
+
+
+</head>
+<body>
+
+<!-- navbar start -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" width="70px" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#sport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sports
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#sport">Cricket</a></li>
+                            <li><a class="dropdown-item" href="#sport">Football</a></li>
+                            <li><a class="dropdown-item" href="#sport">Tennis</a></li>
+                            <li><a class="dropdown-item" href="#sport">Hockey</a></li>
+                            <li><a class="dropdown-item" href="#sport">Badminton </a></li>
+                            <li><a class="dropdown-item" href="#sport">Basketball </a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#service">Maintenance</a></li>
+                            <li><a class="dropdown-item" href="#service">Construction</a></li>
+                            <li><a class="dropdown-item" href="#service">Design</a></li>
+                            <li><a class="dropdown-item" href="#service">Fencing</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#surface" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Surfaces
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#surface">Synthetic Grass</a></li>
+                            <li><a class="dropdown-item" href="#surface">Hybrid Grass</a></li>
+                            <li><a class="dropdown-item" href="#surface">Natural Grass</a></li>
+                            <li><a class="dropdown-item" href="#surface">Courts</a></li>
+                            <li><a class="dropdown-item" href="#surface">Tracks</a></li>
+                        </ul>
+                        </li>  
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#footer">About Us</a>
+                        </li>                                            
+
+                    </ul>
+                    <form>
+                        <button class="btn btn-info rounded-0 contact" type="button" data-bs-toggle="modal" data-bs-target="#contact">Contact</button>
+                    </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- navbar ended -->
+
+<!-- modal fuction -->
+
+<div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactopen" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="contactopen">Mail</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+            <input class="pt-1 pb-2 ps-3 border border-1 rounded-0" type="email" placeholder="Your Email Id">
+            <button type="submit" class="btn btn-success border border-1 rounded-0">Send</button><br><br>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- banner strat -->
+<div class="container-fluid" id="home">
+    <div class="row banner">
+        <div class="col-md-12 heading">
+            <h1>BUILDING CHAMPIONSHIP PITCHES</h1>
+            <P>EXPERTS IN PROFESSIONAL SPORT FACILITY DESIGN & CONSTRUCTION</P>
+        </div>
+    </div>
+</div> 
+<!-- banner ended -->
+
+<!-- body part start -->
+
+ <!------------ categories start ------------->
+<div class="container serve" id="services">
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+            <div class="card shadow">
+                <div class="row p-4 text-center">
+                     <h4>SYNTHETIC TURF</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow">
+                <div class="row text-center p-4">
+                    <h4> NATURAL GRASS</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow">
+                <div class="row p-4 text-center">
+                    <h4> MULTI-SPORT COURTS</h4>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+<!---------- sport start ------------>
+
+
+<div class="container mt-5" id="sport">
+    <div class="row">
+        <h1 class="py-1 text-center">Sports</h1><hr>
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+                <div class="card">
+                <img src="img/cri.jpg" alt="..." class="img-thumbnail" >
+                <div class="card-body">
+                    <h5 class="card-title">Cricket</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button class="btn btn-outline-info float-start rounded-0">More..</button>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/tenn.jpg"  alt="..." class="img-thumbnail" >
+                <div class="card-body">
+                    <h5 class="card-title">Tennis</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button class="btn btn-outline-info float-start rounded-0">More..</button>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/bask.jpg"  alt="..." class="img-thumbnail" >
+                <div class="card-body">
+                    <h5 class="card-title">Basketball</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <button class="btn btn-outline-info float-start rounded-0">More..</button>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- -------start Servies ---------->
+<div class="container-fluid mt-5" id="service" >
+    <div class="row">
+        <h1 class="text-center">Our Services</h1><hr>
+    </div>    
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+            <div class="card ">
+                <img src="img/m1.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/m3.png" class="card-img-top" alt="...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/m5.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
+    </div>
+
+        <div class="row row-cols-1 row-cols-md-3 mt-3">
+        <div class="col">
+            <div class="card ">
+                <img src="img/m2.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/m4.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/m6.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end services -->
+
+<!-- start Grass -->
+<div class="container mt-5" id="surface">
+    <div class="row text-center">
+        <h1>Surfaces</h1><hr>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12 pb-2 pt-1 bg-image hover-zoom">
+                    <img src="img/s.jpg" alt="" width="100%" m-0 p-0 >
+                </div>
+                <div class="col-md-6 "><img src="img/s5.jpg" alt="" width="100%"></div>
+                <div class="col-md-6 "><img src="img/s6.jpg" alt="" width="100%"></div>
+            </div>    
+        </div>        
+        <div class="col-md-6  m-0 p-0">
+            <div class="row">
+                <div class="col-md-7 "><img src="img/s1.jpg" width="105%" alt="" height="98%"></div>
+                <div class="col-md-5 "><img src="img/s3.jpg" alt="" height="98%" width="100%"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 "><img src="img/s7.jpg" alt="" width="111%" height="98%"></div>
+                <div class="col-md-8 "><img src="img/s4.jpg" alt="" width="100%" height="98%" ></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 "><img src="img/s8.jpg" alt="" width="107%" height="95%"></div>
+                <div class="col-md-6 "><img src="img/s2.jpg" alt="" width="100%"  height="95%"></div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- end Grass -->
+
+ <!-- body part ended -->
+
+<!-- start our satisfy customer  -->
+<div class="container">
+    <div class="row mt-3">
+        <h1 class="text-center">Our Satisfy Client</h1><hr>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="8000">
+                <!-- <img src="img/p1.jpg" class="d-block" alt="..."> -->
+                 <div class="row">
+                    <div class="col-md-4 "><img src="img/p1.jpg" class="d-block rounded-circle" alt="..."></div>
+                    <div class="col-md-8 ps-5 pt-5 ">" Lorem ipsum dolor sit, amet consectetur adipisicing elit.                            Consectetur delectus dolore
+                         impedit quas pariatur, voluptates rerum commodi officia fugiat blanditiis dolores ad,
+                         quibusdam voluptas veniam, corrupti aliquam? Voluptas, sit doloribus!"<br>
+                         -<b>Mr. Jhon...</b>
+                        </div>
+
+                 </div>
+                
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <div class="row">
+                    <div class="col-md-4 "><img src="img/p2.jpg" class="d-block rounded-circle" alt="..."></div>
+                    <div class="col-md-8 ps-5 pt-5 ">" Lorem ipsum dolor sit, amet consectetur adipisicing elit.                            Consectetur delectus dolore
+                         impedit quas pariatur, voluptates rerum commodi officia fugiat blanditiis dolores ad,
+                         quibusdam voluptas veniam, corrupti aliquam? Voluptas, sit doloribus!"<br>
+                         - <b>Mis. Mismi...</b>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4 "><img src="img/p3.jpg" class="d-block rounded-circle" alt="..."></div>
+                    <div class="col-md-8 ps-5 pt-5 ">" Lorem ipsum dolor sit, amet consectetur adipisicing elit.                            Consectetur delectus dolore
+                         impedit quas pariatur, voluptates rerum commodi officia fugiat blanditiis dolores ad,
+                         quibusdam voluptas veniam, corrupti aliquam? Voluptas, sit doloribus!"<br>
+                         -<b>KES Schools ...</b>
+                    </div>
+
+                 </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+</div>
+        
+<!-- end our satisfy customer -->
+
+
+ <!-- top arrow button -->
+<button class="float-sm-end sticky-bottom btn btn opacity-75" onclick="topFunction()"><img src="img/arrow.png" width="45px" height="45px" alt=""></button>
+
+
+<!--Start footer -->
+<div class="container-fluid bg-success-subtle mt-4">
+    <div class="row pt-3">
+        <div class="col-md-3 text-center ">
+            <img src="img/logo.png" width="30%" alt=""><br>
+            <span><b></M>SPORTS STEPS SOLUTION</b></span><br><br>
+            <i class="bi bi-whatsapp fs-4"></i>
+            <i class="bi bi-facebook fs-4"></i>
+            <i class="bi bi-instagram fs-4"></i>
+            <i class="bi bi-twitter-x fs-4"></i>
+            <i class="bi bi-linkedin fs-4"></i>
+        </div>
+
+        <div class="col-md-2 px-4 pt-3" id="footer">
+            <h5>About Us</h5>
+            Lorem ipsum dolor  amet consectetur adipisicing elit. modi unde adipisci similique repudiandae?
+        </div>
+        <div class="col-md-2 pt-3 text-sm-start">
+            <h5>Services</h5>
+            <ul class="list-unstyled">
+                <li>Maintenance</li>
+                <li>Construction</li>
+                <li>Design</li>
+                <li>Fencing</li>
+            </ul>
+        </div>
+
+
+        <div class="col-md-2 pt-3  text-sm-start">
+            <h5>Sports</h5>
+            <ul class="list-unstyled">
+                <li>Cricket</li>
+                <li>Football</li>
+                <li>Tennis</li>
+                <li>Hockey</li>
+                <li>More...</li>
+            </ul>
+        </div>
+        <div class="col-md-3 pt-3  text-sm-start">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> Andheri West</li>
+                <li><i class="bi bi-telephone"></i> 123456789 / 987654321</li>
+                <li><i class="bi bi-envelope-at"></i> sss@gmail.com</li>
+            </ul>
+            <input class="pt-1 pb-2 ps-3 border border-1 rounded-1" type="email" placeholder="Your Email Id">
+            <button type="submit" class="btn btn-success border border-1">Send</button><br><br>
+
+        </div>
+
+    </div>
+</div>
+<!-- end footer -->
+<div class="container-fluid bg-success">
+    <div class="row text-end text-white">
+        <p>sss sport @ 2026</p>
+    </div>
+</div>
+
+
+</body>
+</html>
+    
+</body>
+</html>
