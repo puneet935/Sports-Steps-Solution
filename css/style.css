@@ -1,5 +1,6 @@
 .contact:hover{
     box-shadow: 1px 3px 7px 1px #e01818;
+
 }
 .banner {
     background-image: url(../img/1.jpg);
@@ -15,3 +16,182 @@
 .serve {
     margin-top: -35px;
 }
+
+
+.navbar-nav {
+    padding-left: 75px;
+}
+
+/* navbar a */
+
+.dropdown :hover{
+    color: rgb(224, 33, 7);
+    transform: translateY(1px);
+}
+.dropdown a:hover::before{
+    opacity: 1;
+    transform: scale(2);
+}
+
+.dropdown:hover::after{
+    width: 70%;
+}
+
+
+
+/* hover effect */
+/* Dropdown Menu */
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      list-style: none;
+      position: absolute;
+      top: 100%;
+      background:rgb(54 219 0 / 82%);
+      box-shadow: 0 2px 5px rgba(100, 71, 71, 0.1);
+      opacity: 0;
+      transition: all 0.5s;
+      pointer-events: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 2;
+      transform: translateY(1);
+      pointer-events: auto;
+      padding-top: 5px;
+    }
+
+    .dropdown-content a {
+      color:rgb(17, 17, 17);
+      text-decoration: none;
+      display: block;
+      padding-right: 25px;
+      padding-bottom: 10px;
+    }
+
+    .dropdown-content a:hover {
+      /* background: #45daee; */
+      /* padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 15px; */
+      }
+    
+
+/* our project */
+
+ .card1 {
+  /* width: 200px; */
+  height: 250px;
+  margin: 1rem auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card1:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.card-front {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.card-back {
+  /* background: #8b5cf6; */
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* sport */
+
+
+.container .card2 .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .card2 .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #fff;
+}
+
+.container .card2 .slide {
+    width: 350px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card2 .slide.slide1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .7s;
+    transform: translateY(100px);
+}
+
+.container .card2:hover .slide.slide1{
+    transform: translateY(0px);
+}
+
+.container .card2 .slide.slide2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* box-sizing: border-box; */
+    transition: .8s;
+    transform: translateY(-100px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.container .card2:hover .slide.slide2{
+    transform: translateY(0);
+}
+
+.container .card2 .slide.slide2::after{
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    bottom: 15px;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+

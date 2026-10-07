@@ -22,31 +22,36 @@
 
 
 
-
 </head>
 <body>
 
 <!-- navbar start -->
 
+
+
+
+
+
 <div class="container">
-    <div class="row">
+    <div class="row ">
         <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" width="70px" alt=""></a>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container   ">
+                    <a class="navbar-brand" href="#"><img src="img/logo1.png" width="70px" alt="">Sᴘᴏʀᴛs Sᴛᴇᴘs Sᴏʟᴜᴛɪᴏɴs</a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#sport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Sports
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-content">
                             <li><a class="dropdown-item" href="#sport">Cricket</a></li>
                             <li><a class="dropdown-item" href="#sport">Football</a></li>
                             <li><a class="dropdown-item" href="#sport">Tennis</a></li>
@@ -59,7 +64,7 @@
                         <a class="nav-link dropdown-toggle" href="#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class=" dropdown-content">
                             <li><a class="dropdown-item" href="#service">Maintenance</a></li>
                             <li><a class="dropdown-item" href="#service">Construction</a></li>
                             <li><a class="dropdown-item" href="#service">Design</a></li>
@@ -70,7 +75,7 @@
                         <a class="nav-link dropdown-toggle" href="#surface" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Surfaces
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-content">
                             <li><a class="dropdown-item" href="#surface">Synthetic Grass</a></li>
                             <li><a class="dropdown-item" href="#surface">Hybrid Grass</a></li>
                             <li><a class="dropdown-item" href="#surface">Natural Grass</a></li>
@@ -80,13 +85,13 @@
                         </li>  
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#footer">About Us</a>
+                            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
                         </li>                                            
 
                     </ul>
                     <form>
                         <button class="btn btn-info rounded-0 contact" type="button" data-bs-toggle="modal" data-bs-target="#contact">Contact</button>
-                    </form>
+                   </form>
                     </div>
                 </div>
             </nav>
@@ -102,21 +107,22 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="contactopen">Mail</h1>
+        <h1 class="modal-title fs-5" id="contactopen">Message</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-            <input class="pt-1 pb-2 ps-3 border border-1 rounded-0" type="email" placeholder="Your Email Id">
-            <button type="submit" class="btn btn-success border border-1 rounded-0">Send</button><br><br>
+            <div class="row">
+                <div class="col-md-6"><input type="text" placeholder="Name" class="form-control"></div>
+                <div class="col-md-6"><input class="form-control"  type="email" placeholder="Your Email Id"></div>
+            </div><br>
+
+             <textarea id="message" name="message" rows="5" required class="form-control" placeholder="Your Message"></textarea><br>
+            <button type="submit" class="btn btn-success border border-1 rounded-0">Send</button><br>
       </div>
 
     </div>
   </div>
 </div>
-
-
-
-
 
 
 
@@ -127,6 +133,7 @@
             <h1>BUILDING CHAMPIONSHIP PITCHES</h1>
             <P>EXPERTS IN PROFESSIONAL SPORT FACILITY DESIGN & CONSTRUCTION</P>
         </div>
+        <div class="col-md-12 text-center"><img src="img/logot.png" width="30%" alt=""></div>
     </div>
 </div> 
 <!-- banner ended -->
@@ -161,48 +168,149 @@
 
     </div>
 </div>
+
+
+
+
+
+<div class="container mt-5">
+    <div class="row">
+               
+    </div>          
+</div>
+
+
+
+
+
+
 <!---------- sport start ------------>
 
 
-<div class="container mt-5" id="sport">
+<div class="container" id="sport">
     <div class="row">
         <h1 class="py-1 text-center">Sports</h1><hr>
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col">
-                <div class="card">
-                <img src="img/cri.jpg" alt="..." class="img-thumbnail" >
-                <div class="card-body">
-                    <h5 class="card-title">Cricket</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button class="btn btn-outline-info float-start rounded-0">More..</button>
+                <div class="col-md-4">
+            <div class="card2">
+                <div class="slide slide1">
+                    <div class="content">
+                        <div class="icon">
+                            <img src="img/cri.jpg"  width="100%" height="100%" alt="">
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                <img src="img/tenn.jpg"  alt="..." class="img-thumbnail" >
-                <div class="card-body">
-                    <h5 class="card-title">Tennis</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button class="btn btn-outline-info float-start rounded-0">More..</button>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                <img src="img/bask.jpg"  alt="..." class="img-thumbnail" >
-                <div class="card-body">
-                    <h5 class="card-title">Basketball</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    <button class="btn btn-outline-info float-start rounded-0">More..</button>
-                </div>
-                </div>
-            </div>
 
+                <div class="slide slide2">
+                    <div class="content">
+                        <h3>Cricket</h3>
+                        <p>This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-info">More...</button>     
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="col-md-4">
+            <div class="card2">
+                <div class="slide slide1">
+                    <div class="content">
+                        <div class="icon">
+                            <img src="img/tenn.jpg"  width="100%" height="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide slide2">
+                    <div class="content">
+                        <h3>Tennis</h3>
+                        <p>This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-info">More...</button>     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card2">
+                <div class="slide slide1">
+                    <div class="content">
+                        <div class="icon">
+                            <img src="img/bask.jpg"  width="100%" height="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide slide2">
+                    <div class="content">
+                        <h3>Basketball</h3>
+                        <p>This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-info">More...</button>     
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
 </div>
 
+
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <h1 class="text-center">Our Projects</h1><hr>
+    </div>    
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="card1">
+        <div class="card-inner">
+            <div class="card-front"><img src="img/pro1.jpg" width="90%" alt=""></div>
+            <div class="card-back"><img src="img/pro1.2.jpg" width="90%" alt=""  ></div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card1">
+        <div class="card-inner">
+            <div class="card-front"><img src="img/pro2.jpg" width="90%" alt=""></div>
+            <div class="card-back"><img src="img/pro2.1.jpg" width="90%" alt=""  ></div>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card1">
+        <div class="card-inner">
+            <div class="card-front"><img src="img/pro1.jpg" width="90%" alt=""></div>
+            <div class="card-back"><img src="img/pro1.2.jpg" width="90%" alt=""  ></div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+        <!-- <div class="row row-cols-1 row-cols-md-3">
+        <div class="card1">
+        <div class="card-inner">
+            <div class="card-front"><img src="img/pro1.jpg" width="90%" alt=""></div>
+            <div class="card-back"><img src="img/pro2.jpg" width="90%" alt=""  ></div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card1">
+        <div class="card-inner">
+            <div class="card-front"><img src="img/pro1.jpg" width="90%" alt=""></div>
+            <div class="card-back"><img src="img/pro2.jpg" width="90%" alt=""  ></div>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card1">
+        <div class="card-inner">
+            <div class="card-front"><img src="img/pro1.jpg" width="90%" alt=""></div>
+            <div class="card-back"><img src="img/pro2.jpg" width="90%" alt=""  ></div>
+        </div>
+        </div>
+        </div>
+    </div> -->
+</div>
 
 <!-- -------start Servies ---------->
 <div class="container-fluid mt-5" id="service" >
@@ -211,13 +319,13 @@
     </div>    
     <div class="row row-cols-1 row-cols-md-3">
         <div class="col">
-            <div class="card ">
+            <div class="card">
                 <img src="img/m1.jpg" class="card-img-top" alt="...">
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="img/m3.png" class="card-img-top" alt="...">
+                <img src="img/m3.jpg" class="card-img-top" alt="...">
             </div>
         </div>
         <div class="col">
@@ -235,7 +343,7 @@
         </div>
         <div class="col">
             <div class="card">
-                <img src="img/m4.jpg" class="card-img-top" alt="...">
+                <img src="img/m4.jpeg" class="card-img-top" alt="...">
             </div>
         </div>
         <div class="col">
@@ -280,6 +388,10 @@
     </div>
 </div> 
 <!-- end Grass -->
+
+
+
+
 
  <!-- body part ended -->
 
@@ -347,51 +459,55 @@
 
 <!--Start footer -->
 <div class="container-fluid bg-success-subtle mt-4">
-    <div class="row pt-3">
+    <div class="row py-4">
         <div class="col-md-3 text-center ">
-            <img src="img/logo.png" width="30%" alt=""><br>
-            <span><b></M>SPORTS STEPS SOLUTION</b></span><br><br>
+            <img src="img/logo1.png" width="30%" alt=""><br>
+            <span><b></M>Sᴘᴏʀᴛs Sᴛᴇᴘs Sᴏʟᴜᴛɪᴏɴs</b></span><br>
+            KUSHUM SUNIL SAINANI<br><br>
             <i class="bi bi-whatsapp fs-4"></i>
             <i class="bi bi-facebook fs-4"></i>
             <i class="bi bi-instagram fs-4"></i>
             <i class="bi bi-twitter-x fs-4"></i>
             <i class="bi bi-linkedin fs-4"></i>
+            
         </div>
 
-        <div class="col-md-2 px-4 pt-3" id="footer">
-            <h5>About Us</h5>
-            Lorem ipsum dolor  amet consectetur adipisicing elit. modi unde adipisci similique repudiandae?
-        </div>
-        <div class="col-md-2 pt-3 text-sm-start">
+   
+        <div class="col-md-3 pt-3 text-sm-start">
             <h5>Services</h5>
             <ul class="list-unstyled">
-                <li>Maintenance</li>
-                <li>Construction</li>
-                <li>Design</li>
-                <li>Fencing</li>
+                <li>❖ Construction</li>
+                <li>❖ Maintenance</li>
+                <li>❖ Repairing</li>
+                <li>❖ Design</li>
+                <li>❖ Colouring of Synthetic Courts</li>
+                <li>❖ Artificial Turf Courts</li>
             </ul>
         </div>
 
 
-        <div class="col-md-2 pt-3  text-sm-start">
+        <div class="col-md-3 pt-3  text-sm-start">
             <h5>Sports</h5>
             <ul class="list-unstyled">
-                <li>Cricket</li>
-                <li>Football</li>
-                <li>Tennis</li>
-                <li>Hockey</li>
-                <li>More...</li>
+                <li>❖ Lawn TennisCourts</li>
+                <li>❖ Basket Ball Courts</li>
+                <li>❖ BadmintonCourts</li>
+                <li>❖ Pickle Ball Courts</li>
+                <li>❖ Volley ball courts</li>
+                <li>❖ Artificial Turf Courts</li>
+                <li>❖ Kids Outdoor Sports</li>
+                <li>❖ Skating Ring etc..</li>
             </ul>
         </div>
         <div class="col-md-3 pt-3  text-sm-start">
             <h5>Contact</h5>
             <ul class="list-unstyled">
-                <li><i class="bi bi-geo-alt"></i> Andheri West</li>
-                <li><i class="bi bi-telephone"></i> 123456789 / 987654321</li>
-                <li><i class="bi bi-envelope-at"></i> sss@gmail.com</li>
+                <li><i class="bi bi-geo-alt"></i> 29 A-103, Manish Nagar,<br>Four Bungalows, Andheri West,<br>Mumbai-400058. </li>
+                <li><i class="bi bi-telephone"></i> 8422013013 / 9323535930</li>
+                <li><i class="bi bi-envelope-at"></i> startennisacademy2013@gmail.com</li>
             </ul>
-            <input class="pt-1 pb-2 ps-3 border border-1 rounded-1" type="email" placeholder="Your Email Id">
-            <button type="submit" class="btn btn-success border border-1">Send</button><br><br>
+            <input class="pt-1 pb-2 ps-3 border border-1 rounded-0" type="email" placeholder="Your Email Id">
+            <button type="submit" class="btn btn-success border border-1 rounded-0">Send</button><br><br>
 
         </div>
 
@@ -400,7 +516,7 @@
 <!-- end footer -->
 <div class="container-fluid bg-success">
     <div class="row text-end text-white">
-        <p>sss sport @ 2026</p>
+        <p>Sᴘᴏʀᴛs Sᴛᴇᴘs Sᴏʟᴜᴛɪᴏɴs  @2026</p>
     </div>
 </div>
 
