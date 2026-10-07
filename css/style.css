@@ -1,13 +1,61 @@
 .contact:hover{
-    box-shadow: 1px 3px 7px 1px #e01818;
+    color: #f1f7f1;
+    background-color: #09c509;
+    transition: background-color 0.3s ease; 
+    transition-delay: 0.2s;
+    transition: transform 0.4s ease-out; /* Controls the speed of the animation */
+    transform: scale(1.2); /* Increases the image size by 20% */
 
 }
+
+/* navbar hover effect */
+.animated-underline {
+  position: relative;
+}
+
+/* Create the custom underline */
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -1px;
+  left: 0;
+  background-color: #0087ca;
+  /* Hide the line horizontally by default */
+  transform: scaleX(0); 
+  
+  /* Smooth transition for the scale effect */
+  transition: transform 0.3s ease-in-out; 
+  /* Originates from the center (change to 'left' to expand from left-to-right) */
+  transform-origin: center; 
+}
+/* Expand the underline on hover */
+.animated-underline:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+
 .banner {
     background-image: url(../img/1.jpg);
     background-size: cover;
     height: 500px;
     color: aliceblue;
 }
+
+/* banner img zoom */
+.zoom-img {
+  transition: transform 0.3s ease-out; /* Controls the speed of the animation */
+}
+
+.zoom-img:hover {
+  transform: scale(1.5); /* Increases the image size by 20% */
+}
+
+
+
 
 .heading{
     padding-top: 200px;
@@ -193,5 +241,111 @@
     transform: translateX(-50%);
 }
 
+---------------------------------------------
+
+/* btn hover effect */
+
+.btn {
+    position: relative;
+    display: inline-block;
+}
 
 
+.btn.btn-border-4::after,
+.btn.btn-border-4::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    transition: .5s;
+}
+
+.btn.btn-border-4::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.btn.btn-border-4::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.btn.btn-border-4:hover {
+    color: #f4f4f7;
+}
+
+.btn.btn-border-4:hover::after,
+.btn.btn-border-4:hover::before {
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border-color: #da1f06;
+}
+
+
+/* btn  hover effect */
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+button.finbyz-button {
+    color: #1aa8e2;
+    text-decoration: none;
+    background-color: #fff;
+    -webkit-transition: .3s all ease;
+    transition: .3s ease all;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid #1aa8e2;
+    border-radius: 2px;
+    position: relative;
+    z-index: 2;
+}
+button.finbyz-button:before {
+    -webkit-transition: .5s all ease;
+    transition: .5s all ease;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    right: 70%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color:#027702;
+    z-index: -1;
+    
+}
+button.finbyz-button:hover,
+button.finbyz-button:focus
+{
+     /* transition: transform 0.4s ease-out;
+    transform: scale(1.1); */
+
+  color: #FFF;
+}
+button.finbyz-button:hover:before,
+button.finbyz-button:focus:before{
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.size-btn {
+    padding: 15px;
+}
+
+
+/* our services */
+.services:hover{
+    transition: transform 0.4s ease-out; /* Controls the speed of the animation */
+    transform: scale(1.1); /* Increases the image size by 20% */
+    cursor: pointer;
+}
