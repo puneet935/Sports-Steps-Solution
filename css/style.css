@@ -8,6 +8,18 @@
 
 }
 
+.contactus{
+    margin-top: 30px;
+    position: relative;
+    background-image: url(../img/s2.jpg);
+    background-size: cover;
+    height: auto;
+    color: rgb(233, 252, 228);
+    background-attachment: fixed;
+    margin-bottom: 50px;
+    
+}
+
 /* navbar hover effect */
 .animated-underline {
   position: relative;
