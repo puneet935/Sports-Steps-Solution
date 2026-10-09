@@ -45,6 +45,13 @@
     color: aliceblue;
 }
 
+.sport_banner {
+    background-image: url(../img/pro3.jpg);
+    background-size: cover;
+    height: 500px;
+    color: aliceblue;
+}
+
 /* banner img zoom */
 .zoom-img {
   transition: transform 0.3s ease-out; /* Controls the speed of the animation */
