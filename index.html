@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +11,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- link with style css -->
      <link rel="stylesheet" href="css/style.css">
-     
+
+    <!-- link with java script -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <!-- link with css animation
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+<script>
+
+
+</script>
+
 <script>
     function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+</script>
 
-  </script>
 
 
 
@@ -134,11 +146,11 @@
 <!-- banner strat -->
 <div class="container-fluid" id="home">
     <div class="row banner">
-        <div class="col-md-12 heading">
+        <div class="col-md-12 heading banner1">
             <h1>BUILDING CHAMPIONSHIP PITCHES</h1>
             <P>EXPERTS IN PROFESSIONAL SPORT FACILITY DESIGN & CONSTRUCTION</P>
         </div>
-        <div class="col-md-12 text-center"><a href=""><img src="img/logot.png" class="zoom-img" width="30%" alt=""></a></div>
+        <div class="col-md-12 text-center banner2"><a href=""><img src="img/logot.png" class="zoom-img" width="30%" alt=""></a></div>
     </div>
 </div> 
 <!-- banner ended -->
@@ -148,17 +160,17 @@
  <!------------ categories start ------------->
 <div class="container serve" id="services">
     <div class="row row-cols-1 row-cols-md-3">
-        <div class="col">
-            <div class="card shadow">
+        <div class="col banner3">
+            <div class="card shadow ">
                 <!-- <div class="row p-4 text-center">
                      
                 </div> -->
-                <button class="finbyz-button btn-form-submit p-1">
+                <button class="finbyz-button btn-form-submit p-1 ">
                      <a class="btn btn-border-4 p-3"><h4>SYNTHETIC TURF</h4></a>
                 </button>
             </div>
         </div>
-        <div class="col">
+        <div class="col banner3">
             <div class="card shadow">
                 <button class="finbyz-button btn-form-submit p-1">
                     <a class="btn btn-border-4 p-3"><h4>NATURAL GRASS</h4></a>
@@ -168,7 +180,7 @@
                 </div> -->
             </div>
         </div>
-        <div class="col">
+        <div class="col banner3">
             <div class="card shadow">
                 <button class="finbyz-button btn-form-submit p-1">
                     <a class="btn btn-border-4 p-3"><h4>MULTI-SPORT COURTS</h4></a>
@@ -193,32 +205,32 @@
 
 <!---------- sport start ------------>
 
-
 <div class="container" id="sport">
     <div class="row">
         <h1 class="py-1 text-center">Sports</h1><hr>
                 <div class="col-md-4">
-            <div class="card2">
-                <div class="slide slide1">
+            <div class="card2 sport">
+                <div class="slide slide1 ">
                     <div class="content">
                         <div class="icon">
                             <img src="img/cri.jpg"  width="100%" height="100%" alt="">
                         </div>
                     </div>
                 </div>
-
+               
+                
                 <div class="slide slide2">
                     <div class="content">
                         <h3>Cricket</h3>
                         <p>This is a longer card with supporting text below as a natural
                                 lead-in to additional content. This content is a little bit longer.</p>
-                        <a href="sport.html"><button class="btn btn-info">More...</button></a>     
+                        <a href="sport.html"><button class="btn btn-info ">More...</button></a>     
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card2">
+            <div class="card2 sport">
                 <div class="slide slide1">
                     <div class="content">
                         <div class="icon">
@@ -238,7 +250,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card2">
+            <div class="card2 sport">
                 <div class="slide slide1">
                     <div class="content">
                         <div class="icon">
@@ -269,14 +281,14 @@
         <h1 class="text-center">Our Projects</h1><hr>
     </div>    
     <div class="row row-cols-1 row-cols-md-3">
-        <div class="card1">
+        <div class="card1 project1">
         <div class="card-inner">
             <div class="card-front"><img src="img/pro1.jpg" width="90%" alt=""></div>
             <div class="card-back"><img src="img/pro1.2.jpg" width="90%" alt=""  ></div>
         </div>
         </div>
         <div class="col">
-        <div class="card1">
+        <div class="card1 project2">
         <div class="card-inner">
             <div class="card-front"><img src="img/pro2.jpg" width="90%" alt=""></div>
             <div class="card-back"><img src="img/pro2.1.jpg" width="90%" alt=""  ></div>
@@ -284,7 +296,7 @@
         </div>
         </div>
         <div class="col">
-        <div class="card1">
+        <div class="card1 project3">
         <div class="card-inner">
             <div class="card-front"><img src="img/pro1.jpg" width="90%" alt=""></div>
             <div class="card-back"><img src="img/pro1.2.jpg" width="90%" alt=""  ></div>
@@ -320,7 +332,7 @@
 </div>
 
 <!-- -------start Servies ---------->
-<div class="container-fluid mt-5" id="service" >
+<div class="container-fluid mt-5 sport" id="service" >
     <div class="row">
         <h1 class="text-center">Our Services</h1><hr>
     </div>    
@@ -363,6 +375,17 @@
 
 <!-- end services -->
 
+
+
+
+
+
+
+
+
+
+
+
 <!-- start Grass -->
 <div class="container mt-5" id="surface">
     <div class="row text-center">
@@ -371,7 +394,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="row">
-                <div class="col-md-12 pb-2 pt-1 bg-image hover-zoom">
+                <div class="col-md-12 pb-2 pt-1 bg-image">
                     <img src="img/s.jpg" alt="" width="100%" m-0 p-0 >
                 </div>
                 <div class="col-md-6 "><img src="img/s5.jpg" alt="" width="100%"></div>
@@ -399,13 +422,13 @@
 <!--start booking and contact us -->
 <div class="container contactus" id="contactus">
     <div class="row py-4">
-        <div class="col-md-6 pt-5 p-5" >
+        <div class="col-md-6 pt-5 p-5 contact_l" >
             <h1>Contact Us</h1>
             <h5>PLANNING, PROJECTION AND EXECUTION MULTIPURPOSE SPORTS</h5>
             
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis provident esse officiis repellat dolores quidem nihil quo? Eveniet aspernatur, mollitia itaque error animi aliquam dolor quae harum sunt perferendis!
         </div>
-        <div class="col-md-6 col-sm-12 ">
+        <div class="col-md-6 col-sm-12 contact_r">
             <h4>Request A Free Quote</h4><br>
             <div class="row">
                 <div class="col-md-9">
@@ -414,7 +437,7 @@
                     <input type="email" class="form-control rounded-0" placeholder="Email"><br>
                     <input type="text" class="form-control rounded-0" placeholder="Enter City Name"><br>
                     <textarea id="message" name="message" rows="4" required class="form-control rounded-0" placeholder="Your Messages...."></textarea><br>
-                    <button type="submit" class="btn btn-success border border-1 rounded-0 float-end">Submit</button><br>
+                    <button type="submit" class="btn btn-success border border-1 rounded-0 float-end ">Submit</button><br>
 
                 </div>
             </div>
@@ -485,8 +508,8 @@
 
 
  <!-- top arrow button -->
-<button class="float-sm-end sticky-bottom btn btn opacity-75" onclick="topFunction()"><img src="img/arrow.png" width="45px" height="45px" alt=""></button>
 
+<button class="float-sm-end sticky-bottom btn btn opacity-75" onclick="topFunction()"><img src="img/arrow.png" width="45px" height="45px" alt=""></button>
 
 <!--Start footer -->
 <div class="container-fluid bg-success-subtle mt-4">
@@ -530,6 +553,7 @@
                 <li>❖ Skating Ring etc..</li>
             </ul>
         </div>
+        
         <div class="col-md-3 pt-3  text-sm-start">
             <h5>Contact</h5>
             <ul class="list-unstyled">
@@ -544,6 +568,7 @@
 
     </div>
 </div>
+
 <!-- end footer -->
 <div class="container-fluid bg-success">
     <div class="row text-end text-white">
