@@ -57,11 +57,24 @@
     color: aliceblue;
 }
 
+
+
+/* animate__zoomIn */
+
+
+
 .sport_banner {
-    background-image: url(../img/pro3.jpg);
+    background-image: url(../img/2.jpg);
     background-size: cover;
     height: 500px;
     color: aliceblue;
+}
+
+.sport_heading{
+    padding-top: 200px;
+    text-align: center;
+    text-shadow: 2px 4px 4px rgb(37, 180, 18);
+    padding-left: 100px;
 }
 
 /* banner img zoom */
@@ -77,7 +90,7 @@
 
 
 .heading{
-    padding-top: 200px;
+    padding-top: 180px;
     text-align: center;
 }
 .serve {
@@ -368,3 +381,304 @@ button.finbyz-button:focus:before{
     transform: scale(1.1); /* Increases the image size by 20% */
     cursor: pointer;
 }
+
+
+
+
+
+/* scrolled effect */
+
+/* banner part animation */
+@keyframes bottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+    
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.banner1{
+    position: relative;
+  animation: bottomToTop 1.5s ease-out forwards;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.banner2 {
+  position: relative;
+  animation: zoom 2.5s ease-in-out;
+    }
+.sport_heading {
+  position: relative;
+  animation: zoom 2.5s ease-in-out;
+    }    
+
+    @keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner3 {
+  animation: slideDown 3s ease-in-out;
+}
+
+
+
+
+
+
+ /* project part animation */
+    @keyframes moveToRight {
+  from {
+    opacity : 0;
+    transform: translateX(-100%); /* स्क्रीन के बाईं ओर बाहर से शुरू */
+  }
+  to {
+    opacity : 1;
+    transform: translateX(0);
+  }
+}
+.project1 {
+        animation:moveToRight   linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 40%;
+    }
+
+        @keyframes appear {
+        from{
+            opacity : 0;
+            clip-path:inset(100% 80% 0 0);
+        }
+        to {
+            opacity:1;
+            clip-path:inset(0 0 0 0);
+        }
+    }
+.project2 {
+        animation:appear linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 40%;
+    }
+
+    @keyframes moveToLeft {
+  from {
+    opacity : 0;
+    transform: translateX(100%); /* स्क्रीन के दाईं ओर बाहर से शुरू */
+  }
+  to {
+    opacity : 1;
+    transform: translateX(0); /* अपनी असली जगह पर वापस */
+  }
+}
+.project3 {
+        animation:moveToLeft   linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 40%;
+    }
+
+/* sports items */
+
+    @keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.sport {
+        animation:zoomIn   linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 40%;
+    }
+
+
+
+.contact_l {
+        animation:moveToRight   linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 40%;
+    }    
+
+        @keyframes appear {
+        from{
+            
+            clip-path:inset(100% 80% 0 0);
+        }
+        to {
+            
+            clip-path:inset(0 0 0 0);
+        }
+    }
+
+    .contact_r {
+        animation:moveToLeft linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 40%;
+    }
+
+    @keyframes moveToLeft {
+  from {
+    opacity : 0;
+    transform: translateX(100%); /* स्क्रीन के दाईं ओर बाहर से शुरू */
+  }
+  to {
+    opacity : 1;
+    transform: translateX(0); /* अपनी असली जगह पर वापस */
+  }
+}
+
+
+
+
+
+
+
+/* services part animation */
+
+/*========== sport pages gallery images =============*/
+.ga-fg {
+  box-sizing: border-box;
+  width: min(100%, 760px);
+  padding: 18px;
+  border-radius: 18px;
+  background: #fff;
+  color: #13161d;
+  counter-reset: ga-fg-shown;
+}
+.ga-fg__filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+}
+.ga-fg__legend {
+  float: left;
+  margin-right: 6px;
+  padding: 0;
+  color: #4a5162;
+  font-size: 14px;
+  font-weight: 700;
+}
+.ga-fg__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+}
+.ga-fg__radio + label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid #d6dae3;
+  border-radius: 999px;
+  color: #262b36;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .15s ease, color .15s ease;
+}
+.ga-fg__radio + label:hover {
+  background: #f1f3f7;
+}
+.ga-fg__radio:checked + label {
+  border-color: #13161d;
+  background: #13161d;
+  color: #fff;
+}
+.ga-fg__radio:focus-visible + label {
+  outline: 3px solid #0d9488;
+  outline-offset: 2px;
+}
+.ga-fg__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, max(84px, 22%)), 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ga-fg__item {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  counter-increment: ga-fg-shown;
+}
+.ga-fg__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.ga-fg__tag {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / .92);
+  color: #13161d;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ga-fg:has(#ga-fg-cricket:checked) .ga-fg__item:not([data-cat="cricket"]),
+.ga-fg:has(#ga-fg-football:checked) .ga-fg__item:not([data-cat="football"]),
+.ga-fg:has(#ga-fg-tennis:checked) .ga-fg__item:not([data-cat="tennis"]),
+.ga-fg:has(#ga-fg-pickleball:checked) .ga-fg__item:not([data-cat="pickleball"]),
+.ga-fg:has(#ga-fg-badminton:checked) .ga-fg__item:not([data-cat="badminton"]),
+.ga-fg:has(#ga-fg-basketball:checked) .ga-fg__item:not([data-cat="basketball"]) {
+
+  display: none;
+}
+.ga-fg__count {
+  margin: 12px 0 0;
+  color: #4a5162;
+  font-size: 14px;
+}
+.ga-fg__count::before {
+  content: "Showing " counter(ga-fg-shown) " of 20 photos";
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ga-fg__item {
+    transition: opacity .3s ease;
+  }
+  @starting-style {
+    .ga-fg__item {
+      opacity: 0;
+    }
+  }
+}
+
+
